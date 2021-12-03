@@ -1,7 +1,7 @@
 const Web3 = require("web3");
-const ABICODE = require('../../identidad-digital-blockchain/contracts/abi/TestNFT.json');
-const ADDRESS = "0x27883702D76c032959426500E469092eaE9d7f39";
-const PROVIDER = "HTTP://127.0.0.1:7545";
+const ABICODE = require('../../blockchain/contracts/abi/TestNFT.json');
+const ADDRESS = "0x68A4f4b257B831191f919572b4220F6351F38147";
+const PROVIDER = "https://rinkeby.infura.io/v3/aae93492f13a4768a29c0af89db5028b";
 
 const USER_ADDRESS = "0x27883702D76c032959426500E469092eaE9d7f39";
 const USER_KEY = "fe79e7da8573c66cfc45b8b00b613e78c19f4b7ffe8fda4db05376fa445ecf32";

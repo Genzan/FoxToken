@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const API_TestNFT = require("./tools/TestNFT");
 
-const NFTkObj = new API_TestNFT();
+const NFTObj = new API_TestNFT();
 
 const SERVERPORT = 8020;
 
@@ -21,7 +21,7 @@ app.use(bodyParser.json({ verify: rawBodyHandler }));
 
 // Funciones
 app.post('/api/createZorro', async (req, res) => {
-  let response = await NFTkObj.fileUpload(req.body.uri, req.body.score);
+  let response = await NFTObj.createZorro(req.body.uri, req.body.score);
   if(response){
     res.status(200).send();
   }
